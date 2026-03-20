@@ -46,11 +46,9 @@ Approximately 1–3 minutes on a standard desktop computer.
 ## 3. Demo
 
 ### 3.1 Instructions to Run
-
 Launch Jupyter Notebook; Open UNO.ipynb; Run all cells.
 
 ### 3.2 Expected Output
-
 - The notebook executes without errors
 - Intermediate results (e.g., training progress, figures) are displayed inline
 - Final outputs are generated within the notebook 
@@ -60,12 +58,12 @@ The demo uses simulated data and is intended only to verify that the code execut
 ### 3.3 Expected run time for demo
 - Approximately 2–5 minutes on a standard laptop for one outcome.
 
+---
+
 ## 4. Instructions for Use
 
 ### 4.1 Running on Your Own Data
-To apply the method to your own dataset:
-
-Prepare your data in the following format:
+To apply the method to your own dataset, prepare your data in the following format:
 - CSV file
 - Columns:
   - covaraites
@@ -76,7 +74,6 @@ Prepare your data in the following format:
 - Replace the column names in code by your data column names
 
 ### 4.2 Reproducibility (Optional)
-
 Reproducing the main results in the manuscript requires access to the full dataset described in the paper.
 The provided simulated data is intended for demonstration purposes only.
 
