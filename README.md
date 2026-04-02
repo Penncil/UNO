@@ -10,7 +10,7 @@ This repository contains the code for the method described above.
 ## 1. System requirements
 
 ### 1.1 Software requirements
-- Python: [3.11.0]
+- Python==3.11.0
 - Required packages:           
     - matplotlib==3.8.0                   
     - numpy==1.26.4                     
