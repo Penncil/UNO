@@ -4,76 +4,98 @@ Clinical observational data are increasingly used in drug development to assess 
 
 
 ---
+This repository contains a Jupyter notebook and explicit scripts for each stage of the UNO workflow. `UNO.ipynb` imports these scripts while retaining the step-by-step method explanation.
 
-This repository contains the code for the method described above.
+## Repository contents
+```text
+UNO/
+├── README.md
+├── UNO.ipynb
+├── simulated_data.csv
+├── scripts/
+│   ├── feature_construction.py
+│   ├── propensity_score_modeling.py
+│   ├── neural_network_training.py
+│   ├── neuron_scoring.py
+│   ├── pruning.py
+│   ├── fine_tuning.py
+│   └── downstream_estimation.py
+├── requirements.txt
+└── LICENSE
+```
 
-## 1. System requirements
 
-### 1.1 Software requirements
-- Python==3.11.0
-- Required packages:           
-    - matplotlib==3.8.0                   
-    - numpy==1.26.4                     
-    - pandas==2.2.3     
-    - pytorch==2.5.1            
-    - scikit-learn==1.2.2            
-    - scipy==1.11.4          
-    - statsmodels==0.14.0
+## Installation
 
-### 1.2 Operating systems
-The software has been tested on:
-- macOS (Apple silicon / Intel)
-The code is expected to be compatible with Linux-based systems.
+Python 3.11 is recommended.
 
-### 1.3 Hardware requirements
-- CPU: Standard desktop computer
-- GPU: Optional, not required
-
----
-
-## 2. Installation guide
-
-Clone the repository:
-
-bash
+```bash
 git clone https://github.com/Penncil/UNO.git
 cd UNO
 
-Approximately 1–3 minutes on a standard desktop computer.
+python -m venv .venv
+source .venv/bin/activate       # Windows: .venv\Scripts\activate
+python -m pip install -r requirements.txt
+```
 
----
+## Run the demo
 
-## 3. Demo
+```bash
+jupyter lab UNO.ipynb
+```
 
-### 3.1 Instructions to Run
-Launch Jupyter Notebook; Open UNO.ipynb; Run all cells.
+Open the notebook and run its cells in order. The notebook contains eight clearly labeled sections:
 
-### 3.2 Expected Output
+1. package imports and analysis settings;
+2. data loading and validation;
+3. base propensity-score neural network training;
+4. NCO modeling and individual-level signal grouping;
+5. neuron activation scoring;
+6. neuron pruning;
+7. fine-tuning and downstream estimation;
+8. saved results and run summary.
+
+###   Expected output
 - The notebook executes without errors
 - Intermediate results (e.g., training progress, figures) are displayed inline
 - Final outputs are generated within the notebook 
 
 The demo uses simulated data and is intended only to verify that the code executes correctly and is consistent with the method. It does not reproduce the main results in the manuscript.
 
-### 3.3 Expected run time for demo
+###   Expected run time for demo
 - Approximately 2–5 minutes on a standard laptop for one outcome.
 
----
 
-## 4. Instructions for Use
 
-### 4.1 Running on Your Own Data
-To apply the method to your own dataset, prepare your data in the following format:
-- CSV file
-- Columns:
-  - covaraites
-  - outcome
-  - treatment variable
-  - multiple negative control outcomes
-- Modify the data loading section in the notebook: data = load_data("your_data.csv")
-- Replace the column names in code by your data column names
 
-### 4.2 Reproducibility (Optional)
-Reproducing the main results in the manuscript requires access to the full dataset described in the paper.
-The provided simulated data is intended for demonstration purposes only.
+
+
+## System requirements
+
+### Software requirements
+- see requirements.txt
+
+### Operating systems
+The software has been tested on:
+- macOS (Apple silicon / Intel)
+The code is expected to be compatible with Linux-based systems.
+
+### Hardware requirements
+- CPU: Standard desktop computer
+- GPU: Optional, not required
+
+ 
+
+## Using another dataset
+
+Change `DATA_PATH` and the column-name settings in the first notebook code cell. Treatment and NCO columns must be binary, and modeled columns must not contain missing or infinite values.
+
+Cohort construction, eligibility criteria, temporal anchoring, clinical variable definitions, causal assumptions, balance diagnostics, and the uncertainty procedure remain study-specific responsibilities.
+
+## License
+
+MIT License. See `LICENSE`.
+
+ 
+  
 
