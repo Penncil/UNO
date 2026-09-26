@@ -1,0 +1,18 @@
+# Matches the recorded interpreter and core packages, not an unrecorded full lockfile.
+name: uno-simulation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.0
+  - pip
+  - pip:
+      - numpy==1.26.4
+      - pandas==2.2.3
+      - scipy==1.11.4
+      - torch==2.5.1
+      - scikit-learn==1.2.2
+      - statsmodels==0.14.0
+      - threadpoolctl
+      - ipython
+      - ipykernel
+      - jupyterlab
