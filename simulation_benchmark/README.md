@@ -132,6 +132,7 @@ printed summary.
 
 ```text
 simulation_benchmark/
+  README.md
   run_benchmark.ipynb          # English, stepwise entry point
   workflow.py                 # Shared-namespace stage loader, no statistical logic
   benchmark_io.py             # Read-only reporting, diagnostics, and checkpoint export
