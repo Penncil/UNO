@@ -28,11 +28,7 @@ UNO/
     ├── benchmark_io.py          
     ├── requirements.txt
     ├── environment.yml
-    ├── README.md
-    ├── verify_source.py         
-    ├── verify_equivalence.py    
-    ├── reference/               
-    └── verification/           
+    ├── README.md          
 ```
 
 
