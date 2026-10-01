@@ -22,13 +22,12 @@ UNO/
 ├── requirements.txt
 └── LICENSE
 ├──simulation_benchmark/
-    ├── run_benchmark.ipynb        
-    ├── scripts/                  
-    ├── workflow.py              
-    ├── benchmark_io.py          
-    ├── requirements.txt
-    ├── environment.yml
-    ├── README.md          
+    |-- run_simulation.py
+    |-- simulation_benchmark.ipynb
+    |-- requirements.txt
+    |-- README.md
+    |-- .gitignore
+    `-- scripts
 ```
 
 
