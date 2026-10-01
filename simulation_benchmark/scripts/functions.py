@@ -1,7 +1,5 @@
 """Basic models and numerical helpers for the UNO simulation.
-
-Numerical definitions are preserved from UNO_simulation_interactive_v0(4).ipynb.
-Comments are in English. Training, pruning and fine-tuning remain in the stage scripts.
+Training, pruning and fine-tuning remain in the stage scripts.
 Importing this module does not train models or draw random samples.
 """
 
