@@ -21,7 +21,7 @@ UNO/
 │   └── downstream_estimation.py
 ├── requirements.txt
 ├── LICENSE
-└──simulation_benchmark/
+└── simulation_benchmark/
     ├── run_simulation.py
     ├── simulation_benchmark.ipynb
     ├── requirements.txt
