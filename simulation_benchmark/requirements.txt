@@ -1,15 +1,9 @@
-# Core versions printed in the uploaded notebook. Do not silently upgrade them.
-# Use Python 3.11.0 to match the notebook's recorded interpreter.
-numpy==1.26.4
-pandas==2.2.3
-scipy==1.11.4
-torch==2.5.1
-scikit-learn==1.2.2
-statsmodels==0.14.0
-
-# Required helpers / notebook interface. Their original versions were not recorded.
-# These are intentionally NOT represented as an exact historic lockfile.
+numpy
+pandas
+scipy
+torch
+scikit-learn
+statsmodels
 threadpoolctl
 ipython
-ipykernel
 jupyterlab
