@@ -20,14 +20,14 @@ UNO/
 │   ├── fine_tuning.py
 │   └── downstream_estimation.py
 ├── requirements.txt
-└── LICENSE
-├──simulation_benchmark/
-    |-- run_simulation.py
-    |-- simulation_benchmark.ipynb
-    |-- requirements.txt
-    |-- README.md
-    |-- .gitignore
-    `-- scripts
+├── LICENSE
+└──simulation_benchmark/
+    ├── run_simulation.py
+    ├── simulation_benchmark.ipynb
+    ├── requirements.txt
+    ├── README.md
+    ├── .gitignore
+    └── scripts
 ```
 
 
